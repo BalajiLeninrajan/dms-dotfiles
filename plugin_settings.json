@@ -9,7 +9,20 @@
   },
   "webSearch": {
     "enabled": true,
-    "searchEngines": [],
-    "defaultEngine": "duckduckgo"
+    "searchEngines": [
+      {
+        "id": "chatgpt",
+        "name": "ChatGPT",
+        "icon": "material:automation",
+        "url": "https://chatgpt.com/?prompt=%s",
+        "keywords": []
+      }
+    ],
+    "defaultEngine": "duckduckgo",
+    "noTrigger": true,
+    "trigger": "?"
+  },
+  "dankBatteryAlerts": {
+    "enabled": true
   }
 }

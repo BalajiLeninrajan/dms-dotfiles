@@ -146,8 +146,6 @@ PluginSettings {
         options: [
             {label: "Google", value: "google"},
             {label: "DuckDuckGo", value: "duckduckgo"},
-            {label: "Brave Search", value: "brave"},
-            {label: "Bing", value: "bing"}
         ]
         defaultValue: "google"
     }
