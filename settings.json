@@ -1,14 +1,13 @@
 {
-  "currentThemeName": "custom",
+  "currentThemeName": "cat-mauve",
   "customThemeFile": "/home/balaji/.config/DankMaterialShell/themes/catppuccin-mocha.json",
   "matugenScheme": "scheme-tonal-spot",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
-  "dankBarTransparency": 0.5,
-  "dankBarWidgetTransparency": 0.8,
   "popupTransparency": 0.9,
   "dockTransparency": 0.2,
   "widgetBackgroundColor": "s",
+  "widgetColorMode": "default",
   "cornerRadius": 12,
   "use24HourClock": false,
   "showSeconds": false,
@@ -40,6 +39,11 @@
   "controlCenterShowNetworkIcon": true,
   "controlCenterShowBluetoothIcon": true,
   "controlCenterShowAudioIcon": true,
+  "controlCenterShowVpnIcon": true,
+  "controlCenterShowBrightnessIcon": false,
+  "controlCenterShowMicIcon": false,
+  "controlCenterShowBatteryIcon": false,
+  "controlCenterShowPrinterIcon": false,
   "showPrivacyButton": true,
   "privacyShowMicIcon": false,
   "privacyShowCameraIcon": false,
@@ -102,45 +106,27 @@
   "showWorkspaceApps": false,
   "maxWorkspaceIcons": 3,
   "workspacesPerMonitor": true,
+  "showOccupiedWorkspacesOnly": false,
   "dwlShowAllTags": false,
   "workspaceNameIcons": {},
   "waveProgressEnabled": true,
+  "scrollTitleEnabled": true,
   "clockCompactMode": false,
   "focusedWindowCompactMode": true,
   "runningAppsCompactMode": true,
   "keyboardLayoutNameCompactMode": false,
   "runningAppsCurrentWorkspace": false,
   "runningAppsGroupByApp": false,
+  "centeringMode": "index",
   "clockDateFormat": "ddd MMM d",
   "lockDateFormat": "ddd MMM d",
   "mediaSize": 0,
-  "dankBarLeftWidgets": [
-    "launcherButton",
-    {
-      "id": "workspaceSwitcher",
-      "enabled": true
-    },
-    "focusedWindow"
-  ],
-  "dankBarCenterWidgets": [
-    "music",
-    "clock",
-    "weather"
-  ],
-  "dankBarRightWidgets": [
-    "systemTray",
-    "clipboard",
-    "cpuUsage",
-    "memUsage",
-    "notificationButton",
-    "battery",
-    "controlCenterButton"
-  ],
-  "dankBarWidgetOrder": [],
   "appLauncherViewMode": "list",
   "spotlightModalViewMode": "list",
   "sortAppsAlphabetically": true,
   "appLauncherGridColumns": 4,
+  "spotlightCloseNiriOverview": true,
+  "niriOverviewOverlayEnabled": true,
   "weatherLocation": "New York, NY",
   "weatherCoordinates": "40.7128,-74.0060",
   "useAutoLocation": true,
@@ -159,13 +145,12 @@
   "monoFontFamily": "JetBrainsMono Nerd Font",
   "fontWeight": 400,
   "fontScale": 1,
-  "dankBarFontScale": 1,
   "notepadUseMonospace": true,
   "notepadFontFamily": "",
   "notepadFontSize": 14,
-  "notepadShowLineNumbers": false,
-  "notepadTransparencyOverride": -1,
-  "notepadLastCustomTransparency": 0.7,
+  "notepadShowLineNumbers": true,
+  "notepadTransparencyOverride": 0.95,
+  "notepadLastCustomTransparency": 0.95,
   "soundsEnabled": true,
   "useSystemSoundTheme": false,
   "soundNewNotification": true,
@@ -175,13 +160,16 @@
   "acLockTimeout": 180,
   "acSuspendTimeout": 0,
   "acSuspendBehavior": 0,
+  "acProfileName": "",
   "batteryMonitorTimeout": 180,
   "batteryLockTimeout": 120,
   "batterySuspendTimeout": 300,
   "batterySuspendBehavior": 0,
+  "batteryProfileName": "",
   "lockBeforeSuspend": true,
-  "preventIdleForMedia": false,
   "loginctlLockIntegration": true,
+  "fadeToLockEnabled": false,
+  "fadeToLockGracePeriod": 5,
   "launchPrefix": "",
   "brightnessDevicePins": {},
   "wifiNetworkPins": {},
@@ -193,7 +181,7 @@
   "syncModeWithPortal": true,
   "terminalsAlwaysDark": false,
   "showDock": false,
-  "dockAutoHide": true,
+  "dockAutoHide": false,
   "dockGroupByApp": true,
   "dockOpenOnOverview": false,
   "dockPosition": 1,
@@ -202,30 +190,17 @@
   "dockMargin": 0,
   "dockIconSize": 42,
   "dockIndicatorStyle": "line",
+  "dockBorderEnabled": false,
+  "dockBorderColor": "surfaceText",
+  "dockBorderOpacity": 1,
+  "dockBorderThickness": 1,
   "notificationOverlayEnabled": false,
-  "dankBarAutoHide": false,
-  "dankBarAutoHideDelay": 250,
-  "dankBarOpenOnOverview": false,
-  "dankBarVisible": true,
-  "dankBarSpacing": 0,
-  "dankBarBottomGap": 0,
-  "dankBarInnerPadding": -8,
-  "dankBarPosition": 0,
-  "dankBarSquareCorners": true,
-  "dankBarNoBackground": false,
-  "dankBarGothCornersEnabled": true,
-  "dankBarGothCornerRadiusOverride": false,
-  "dankBarGothCornerRadiusValue": 12,
-  "dankBarBorderEnabled": false,
-  "dankBarBorderColor": "primary",
-  "dankBarBorderOpacity": 1,
-  "dankBarBorderThickness": 1,
-  "popupGapsAuto": true,
-  "popupGapsManual": 4,
   "modalDarkenBackground": true,
   "lockScreenShowPowerActions": true,
   "enableFprint": false,
   "maxFprintTries": 3,
+  "lockScreenActiveMonitor": "all",
+  "lockScreenInactiveColor": "#000000",
   "hideBrightnessSlider": false,
   "notificationTimeoutLow": 5000,
   "notificationTimeoutNormal": 5000,
@@ -234,12 +209,15 @@
   "osdAlwaysShowValue": true,
   "osdPosition": 5,
   "osdVolumeEnabled": true,
+  "osdMediaVolumeEnabled": true,
   "osdBrightnessEnabled": true,
   "osdIdleInhibitorEnabled": true,
   "osdMicMuteEnabled": true,
   "osdCapsLockEnabled": true,
   "osdPowerProfileEnabled": true,
-  "powerActionConfirm": true,
+  "osdAudioOutputEnabled": true,
+  "powerActionConfirm": false,
+  "powerActionHoldDuration": 0.5,
   "powerMenuActions": [
     "reboot",
     "logout",
@@ -262,5 +240,84 @@
   "displayNameMode": "system",
   "screenPreferences": {},
   "showOnLastDisplay": {},
-  "configVersion": 1
+  "barConfigs": [
+    {
+      "id": "default",
+      "name": "Main Bar",
+      "enabled": true,
+      "position": 0,
+      "screenPreferences": [
+        "all"
+      ],
+      "showOnLastDisplay": true,
+      "leftWidgets": [
+        "launcherButton",
+        {
+          "id": "workspaceSwitcher",
+          "enabled": true
+        },
+        "focusedWindow"
+      ],
+      "centerWidgets": [
+        {
+          "id": "music",
+          "enabled": true
+        },
+        {
+          "id": "clock",
+          "enabled": true,
+          "clockCompactMode": false
+        },
+        "weather"
+      ],
+      "rightWidgets": [
+        {
+          "id": "systemTray",
+          "enabled": true
+        },
+        {
+          "id": "cpuUsage",
+          "enabled": true
+        },
+        {
+          "id": "memUsage",
+          "enabled": true
+        },
+        {
+          "id": "notificationButton",
+          "enabled": true
+        },
+        {
+          "id": "battery",
+          "enabled": true
+        },
+        {
+          "id": "controlCenterButton",
+          "enabled": true
+        }
+      ],
+      "spacing": 0,
+      "innerPadding": -8,
+      "bottomGap": 0,
+      "transparency": 0.5,
+      "widgetTransparency": 0.8,
+      "squareCorners": true,
+      "noBackground": false,
+      "gothCornersEnabled": false,
+      "gothCornerRadiusOverride": false,
+      "gothCornerRadiusValue": 12,
+      "borderEnabled": false,
+      "borderColor": "primary",
+      "borderOpacity": 1,
+      "borderThickness": 1,
+      "fontScale": 1,
+      "autoHide": false,
+      "autoHideDelay": 250,
+      "openOnOverview": false,
+      "visible": true,
+      "popupGapsAuto": true,
+      "popupGapsManual": 4
+    }
+  ],
+  "configVersion": 2
 }
