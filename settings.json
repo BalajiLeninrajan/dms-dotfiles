@@ -6,7 +6,7 @@
   "matugenTargetMonitor": "",
   "popupTransparency": 0.9,
   "dockTransparency": 0.2,
-  "widgetBackgroundColor": "s",
+  "widgetBackgroundColor": "sch",
   "widgetColorMode": "default",
   "cornerRadius": 12,
   "use24HourClock": false,
@@ -131,9 +131,9 @@
   "weatherCoordinates": "40.7128,-74.0060",
   "useAutoLocation": true,
   "weatherEnabled": true,
-  "networkPreference": "auto",
+  "networkPreference": "wifi",
   "vpnLastConnected": "",
-  "iconTheme": "Colloid-Purple-Catppuccin-Dark",
+  "iconTheme": "System Default",
   "launcherLogoMode": "os",
   "launcherLogoCustomPath": "",
   "launcherLogoColorOverride": "primary",
@@ -238,8 +238,14 @@
   "updaterCustomCommand": "",
   "updaterTerminalAdditionalParams": "",
   "displayNameMode": "system",
-  "screenPreferences": {},
-  "showOnLastDisplay": {},
+  "screenPreferences": {
+    "osd": [
+      "all"
+    ]
+  },
+  "showOnLastDisplay": {
+    "osd": true
+  },
   "barConfigs": [
     {
       "id": "default",
@@ -261,7 +267,8 @@
       "centerWidgets": [
         {
           "id": "music",
-          "enabled": true
+          "enabled": true,
+          "mediaSize": 0
         },
         {
           "id": "clock",
