@@ -8,25 +8,18 @@ Item {
     property var pluginService: null
     property string trigger: "?"
     property var searchEngines: []
-    property string defaultEngine: "google"
+    property string defaultEngine: "unduck"
 
     signal itemsChanged()
 
     property var builtInEngines: [
         {
-            id: "google",
-            name: "Google",
+            id: "unduck",
+            name: "UnDuck",
             icon: "material:travel_explore",
-            url: "https://www.google.com/search?q=%s",
-            keywords: ["google", "search"]
+            url: "https://unduck.link?q=%s",
+            keywords: ["unduck", "search"]
         },
-        {
-            id: "duckduckgo",
-            name: "DuckDuckGo",
-            icon: "material:shield",
-            url: "https://duckduckgo.com/?q=%s",
-            keywords: ["ddg", "duckduckgo", "privacy"]
-        }
     ]
 
     Component.onCompleted: {

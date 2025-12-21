@@ -144,10 +144,9 @@ PluginSettings {
         label: "Default Search Engine"
         description: "The search engine used when no keyword is specified"
         options: [
-            {label: "Google", value: "google"},
-            {label: "DuckDuckGo", value: "duckduckgo"},
+            {label: "UnDuck", value: "unduck"},
         ]
-        defaultValue: "google"
+        defaultValue: "unduck"
     }
 
     StyledRect {
@@ -572,53 +571,6 @@ PluginSettings {
         width: parent.width
         height: 1
         color: Theme.outlineVariant
-    }
-
-    Column {
-        spacing: 8
-        width: parent.width
-
-        StyledText {
-            text: "Built-in Search Engines:"
-            font.pixelSize: Theme.fontSizeMedium
-            font.weight: Font.Medium
-            color: Theme.surfaceText
-        }
-
-        Column {
-            spacing: 4
-            leftPadding: 16
-
-            StyledText {
-                text: "• Google, DuckDuckGo, Brave Search, Bing"
-                font.pixelSize: Theme.fontSizeSmall
-                color: Theme.surfaceVariantText
-            }
-
-            StyledText {
-                text: "• YouTube, GitHub, Stack Overflow, Reddit, Wikipedia"
-                font.pixelSize: Theme.fontSizeSmall
-                color: Theme.surfaceVariantText
-            }
-
-            StyledText {
-                text: "• Amazon, eBay, Google Maps, Google Images"
-                font.pixelSize: Theme.fontSizeSmall
-                color: Theme.surfaceVariantText
-            }
-
-            StyledText {
-                text: "• Twitter/X, LinkedIn, IMDb, Google Translate"
-                font.pixelSize: Theme.fontSizeSmall
-                color: Theme.surfaceVariantText
-            }
-
-            StyledText {
-                text: "• Arch Linux, AUR, npm, PyPI, crates.io, MDN"
-                font.pixelSize: Theme.fontSizeSmall
-                color: Theme.surfaceVariantText
-            }
-        }
     }
 
     StyledRect {
