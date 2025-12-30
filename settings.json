@@ -4,7 +4,7 @@
   "matugenScheme": "scheme-tonal-spot",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
-  "popupTransparency": 0.9,
+  "popupTransparency": 1,
   "dockTransparency": 0.2,
   "widgetBackgroundColor": "sch",
   "widgetColorMode": "default",
@@ -306,8 +306,8 @@
       "spacing": 0,
       "innerPadding": -8,
       "bottomGap": 0,
-      "transparency": 0.5,
-      "widgetTransparency": 0.8,
+      "transparency": 1,
+      "widgetTransparency": 1,
       "squareCorners": true,
       "noBackground": false,
       "gothCornersEnabled": false,
@@ -323,7 +323,8 @@
       "openOnOverview": false,
       "visible": true,
       "popupGapsAuto": true,
-      "popupGapsManual": 4
+      "popupGapsManual": 4,
+      "widgetOutlineEnabled": false
     }
   ],
   "configVersion": 2
