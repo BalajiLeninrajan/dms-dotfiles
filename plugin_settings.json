@@ -15,7 +15,8 @@
     "trigger": "?"
   },
   "dankBatteryAlerts": {
-    "enabled": true
+    "enabled": true,
+    "warningThreshold": 20
   },
   "dankDesktopWeather": {
     "enabled": true
